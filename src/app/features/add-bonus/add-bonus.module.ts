@@ -19,12 +19,10 @@ import { BonusSearcherComponent } from './bonus-searcher/bonus-searcher.componen
   imports: [
     NgxMaskModule.forRoot(),
     BonusListContainerModule,
-    RouterModule.forChild([
-      { path: '', component: AddBonusComponent, data: { roles: ['moderator', 'admin'] } },
-    ]),
+    RouterModule.forChild([{ path: '', component: AddBonusComponent }]),
     SharedModule,
   ],
   providers: [BonusAddressService],
-  exports: [AddBonusComponent, RouterModule],
+  exports: [AddBonusComponent],
 })
 export class AddBonusModule {}

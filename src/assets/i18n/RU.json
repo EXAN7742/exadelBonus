@@ -40,6 +40,14 @@
         "title": "Операция успешна!",
         "message": "Сохранен новый бонус!"
       },
+      "saveUpdateBonus": {
+        "title": "Операция успешна!!",
+        "message": "Изменения сохранены!"
+      },
+      "UpdateBonusError": {
+        "title": "Ошибка сохранения",
+        "message": "Возникли проблемы с сохранением бонуса!"
+      },
       "getAddress": {
         "title": "Ошибка ответа",
         "message": "Возникли проблемы с ответом сервера!"
@@ -67,6 +75,10 @@
       "applyError" : {
         "title": "Ошибка ответа!",
         "message": "Возникли проблемы с сохранением заявки!"
+      },
+      "noBonuses": {
+        "title": "",
+        "message": "У Вас пока нет бонусов!"
       }
     }
   },
@@ -95,16 +107,34 @@
   "home": {
     "pick": {
       "labelFilter": "Фильтр",
-      "labelSorting": "Сортировка",
-      "sorting": {
-        "byTitle": "По заголовку",
-        "byCompany": "По имени компании",
-        "byDateStart": "По дате начала действия",
-        "byDateEnd": "По дате окончания действия",
-        "byRating": "По рейтингу",
-        "byType": "По типу"
-      }
-    }
+      "labelSorting": "Сортировка"
+    },
+    "confirm": {
+    "question": "Вы хотите отправить заявку?",
+    "yes": "Да",
+    "no": "Нет",
+    "description": "Описание: ",
+    "phone": "Телефон: ",
+    "address": "Адрес: "}
+  },
+  "tagsInput": {
+    "tags": "Теги",
+    "newTags": "Новые теги..."
+  },
+  "cityInput": {
+    "city": "Город"
+  },
+  "datepicker": {
+    "dateStart": "Начальная дата",
+    "dateEnd": "Конечная дата"
+  },
+  "sorting": {
+    "byTitle": "По заголовку",
+    "byCompany": "По имени компании",
+    "byDateStart": "По дате начала действия",
+    "byDateEnd": "По дате окончания действия",
+    "byRating": "По рейтингу",
+    "byType": "По типу"
   },
   "rateForm": {
     "notification": {
@@ -148,12 +178,18 @@
   },
   "loginErrors": {
     "invalidData": {
-      "title": "Ошыбка входа",
+      "title": "Ошибка входа",
       "message" : "Неверный логин или пароль"
     },
     "serverError": {
-      "title": "Ошыбка входа",
+      "title": "Ошибка входа",
       "message" : "Что-то пошло не так"
     }
+  },
+  "choosePlace": {
+    "geolocation": "Геолокация",
+    "office": "Выберите офис",
+    "cancel": "Отмена",
+    "ok": "Принять"
   }
 }

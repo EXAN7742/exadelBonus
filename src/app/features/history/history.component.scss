@@ -1,0 +1,16 @@
+.bonus-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bonus-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.spinner {
+  margin: auto;
+}

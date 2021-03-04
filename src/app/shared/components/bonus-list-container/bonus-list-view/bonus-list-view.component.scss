@@ -3,5 +3,28 @@
     width: 100%;
     margin-right: 20px;
     padding-top: 10px;
+    scroll-snap-align: start;
+  }
+
+  app-bonus {
+    height: 100%;
+  }
+}
+
+.bonus-container:first-child {
+  animation: pulse 1s;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  30% {
+    opacity: 0.3;
+    transform: scale(0.92, 0.92);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
   }
 }

@@ -1,3 +1,5 @@
+import { MatDialogModule } from '@angular/material/dialog';
+import { LocationService } from '@services/location.service';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CityInputComponent } from './city-input.component';
@@ -5,6 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BonusesService } from '@services/bonuses.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { ToastrModule } from 'ngx-toastr';
+import { LocationStrategy } from '@angular/common';
+import { LocationService } from '@services/location.service';
+import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 describe('CityInputComponent', () => {
   let component: CityInputComponent;
@@ -18,8 +23,9 @@ describe('CityInputComponent', () => {
         HttpClientModule,
         ToastrModule.forRoot(),
         TranslateModule.forRoot(),
+        MatDialogModule,
       ],
-      providers: [BonusesService],
+      providers: [BonusesService, LocationService],
     }).compileComponents();
   });
 
